@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+main, header, aside, article, footer{
+   
+}
 
 main{
     display: flex;
@@ -15,6 +17,7 @@ main{
 }
 header{
     flex:1 1 100%;
+
 }
 aside{
     

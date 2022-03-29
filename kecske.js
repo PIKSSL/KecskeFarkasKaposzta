@@ -33,11 +33,13 @@ function kattint(){
 function feltolt(){
     ID("csonak").innerHTML="<img src='kepek/csonak.png'>";
     var cs = $("article img")[0];
-    cs.style.width = "100%";
+    cs.style.width = "70%";
+    
 }
 
 function sty(){
     var arr = $("article")[0];
+    arr.style.textAlign = "center";
     arr.style.backgroundColor ="lightblue";
     var foo = $("footer p")[0];
     foo.innerHTML = "György Krisztián";

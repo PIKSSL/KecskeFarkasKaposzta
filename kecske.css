@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+header{
+    flex:1 1 100%;
+}
+aside{
+    
+}
+#bal{
+    flex: 1 1 20%;
+}
+#jobb{
+    flex: 1 1 20%;
+}
+
+img{
+    width: 100px;
+}
+article{
+    flex: 1 1 60%;
+}
+footer{
+    flex:1 1 100%;
+}

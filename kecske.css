@@ -5,7 +5,7 @@
 }
 
 main, header, aside, article, footer{
-    border: 2pt solid rgb(255, 138, 138);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 main{
@@ -38,4 +38,8 @@ article{
 }
 footer{
     flex:1 1 100%;
+}
+.kiemel{
+    border: 2px solid rgb(255, 175, 175);
+    cursor: grab;
 }

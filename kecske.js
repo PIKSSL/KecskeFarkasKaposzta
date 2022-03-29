@@ -16,7 +16,39 @@ function init(){
     for (let index = 0; index < kepek.length; index++) {
         kepek[index].addEventListener("click",kattint);  
     }
+    var kepek1 = $("#bal img");
+    for (let index = 0; index < kepek.length; index++) {
+        kepek1[index].addEventListener("mouseover", huzfel);
+        kepek1[index].addEventListener("mouseout", huzle);
+        kepek1[index].addEventListener("click",csonakk);
+    }
+
     kattint();
+}
+var tomb=[];
+function csonakk(event){
+    var kepek = $("#bal img");
+    tomb.push(event.target.alt);
+    if(tomb.indexOf("kecske") >=0 && tomb.indexOf("farkas") >=0){
+        alert("Megdöglött a kecske");
+        
+    }else if(tomb.indexOf("kecske") >=0 && tomb.indexOf("kaposzta")>=0){
+        alert("Megzabálta a káposztát az a hülye kecske");
+    }
+    else{
+        ID("csonak").innerHTML += "<img alt='"+event.target.alt+"' src='"+event.target.src+"'>";
+        
+        event.target.style.display = "none";
+        
+    }
+    
+}
+
+function huzfel(event){
+    event.target.className="kiemel";
+}
+function huzle(event){
+    event.target.className="";
 }
 
 
